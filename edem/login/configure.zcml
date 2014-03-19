@@ -4,11 +4,11 @@
   xmlns:five="http://namespaces.zope.org/five">
 
     
-  <browser:page name="login.html" 
+  <browser:page name="logout.html" 
     for="*" 
-    class="gs.login.view.GSLoginView" 
-    template="browser/templates/login.pt" 
-    layer="gs.skin.ogn.edem.interfaces.IEDemLayer" 
+    class="gs.content.base.page.SitePage" 
+    template="browser/templates/loggedout.pt" 
+    layer="edem.skin.interfaces.IEDemLayer" 
     permission="zope2.Public" />
 </configure>
 

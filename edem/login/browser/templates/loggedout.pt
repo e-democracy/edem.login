@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+  metal:use-macro="context/@@groupserver_layout/page">
+  <head>
+    <title metal:fill-slot="title">Signed Out:
+      <span tal:replace="view/siteInfo/name">This Site</span></title>
+  </head>
+  <body>
+    <tal:block metal:fill-slot="utilitylinks">
+      <!-- =mpj17= TODO: Put this back when all the sites are of the shim
+      ul class="dotted-inline-list" role="navigation" id="utilitylinks">
+        <li id="utilitylinks-log-in">
+          <a title="Log in here" data-icon="🔒" class="btn btn-small" 
+             href="/login.html" id="utilitylinks-log-in-link">Sign in</a>
+        </li>
+      </ul-->
+    </tal:block>
+    <tal:block metal:fill-slot="body">
+      <div id="edem-login-loggedout-body">
+        <h1>Signed Out</h1>
+        <p>Thank-you for participating. 
+          You have been signed out.</p>
+        <p>If you hadn't meant to do this you may return to the 
+          <a href="/login.html">sign in page</a>.</p>
+      </div>
+    </tal:block>
+  </body>
+</html>
+
