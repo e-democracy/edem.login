@@ -12,7 +12,7 @@ setup(name='edem.login',
                       open(os.path.join("docs", "HISTORY.txt")).read(),
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers for values 
     classifiers=[
-      "Development Status :: 1 - Planning",
+      "Development Status :: 5 - Production/Stable",
       "Environment :: Web Environment",
       "Framework :: Zope2",
       "Intended Audience :: Developers",
@@ -33,8 +33,8 @@ setup(name='edem.login',
     zip_safe=True,
     install_requires=[
         'setuptools',
-        'gs.skin.ogn.edem',
-        'gs.login',
+        'edem.skin',
+        'gs.content.base',
         # -*- Extra requirements: -*-
     ],
     entry_points="""
