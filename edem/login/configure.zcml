@@ -3,7 +3,13 @@
   xmlns:browser="http://namespaces.zope.org/browser"
   xmlns:five="http://namespaces.zope.org/five">
 
-    
+  <browser:page name="login.html" 
+    for="*" 
+    class="gs.login.view.GSLoginView" 
+    template="browser/templates/login.pt" 
+    layer="edem.skin.interfaces.IEDemLayer" 
+    permission="zope2.Public" />
+   
   <browser:page name="logout.html" 
     for="*" 
     class="gs.content.base.page.SitePage" 

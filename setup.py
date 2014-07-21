@@ -35,6 +35,7 @@ setup(name='edem.login',
         'setuptools',
         'edem.skin',
         'gs.content.base',
+        'gs.login',
         # -*- Extra requirements: -*-
     ],
     entry_points="""
